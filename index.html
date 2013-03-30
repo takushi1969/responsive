@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      function openHVGA() {
+      window.open("file:///work/usami/firefox/responsive/fluidlayout.html", "open as HVGA", "width=480,height=320");
+      return false;
+      }
+
+      function openHD() {
+      window.open("file:///work/usami/firefox/responsive/fluidlayout.html", "open as HVGA", "width=800,height=480");
+      return false;
+      }
+    </script>
+    <style type="text/css">
+      div {
+      padding: 5rem;
+      }
+      @media screen and (max-width: 320px) {
+      div {
+      padding: 0rem;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" name="openHVGA" value="openHVGA" onClick="openHVGA();">
+    <input type="button" name="openQHD" value="openQHD" onClick="openHD();">
+  </body>
+</html>
